@@ -1,0 +1,25 @@
+/* Intro component
+-----------------*/
+.intro {
+  max-width: 100rem;
+  margin: 0 auto;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    margin-top: -5rem;
+    padding-top: 2rem;
+    background-color: var(--main-bg-color);
+
+    h2 {
+      max-width: 70rem;
+    }
+
+    p {
+      font-family: 'Outfit', sans-serif;
+      max-width: 50rem;
+    }
+  }
+}

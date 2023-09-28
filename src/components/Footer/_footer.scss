@@ -1,0 +1,94 @@
+/* Footer component
+------------------*/
+.footer {
+  // height: 40rem;
+  width: 100%;
+  background-color: var(--tertiary-bg-color);
+  color: #fff;
+
+  &__grid {
+    max-width: 100rem;
+    margin: 0 auto; // Spacing outside the element, auto on left and right centers it
+    display: grid; // Activate grid
+    grid-template-columns: 2fr repeat(2, 1fr); // Grid layout
+    grid-template-rows: 1fr; // Grid layout
+    padding-bottom: 2rem; // Spacing inside the grid, bottom
+  }
+
+  // Footer grid cell
+  &__cell {
+    display: flex; // Activate flexbox
+    flex-direction: column; // Stacking items above one another
+    justify-content: flex-end; // Moving items to the bottom on the cross axis
+
+    // Selecting first grid cell
+    &:nth-of-type(1) {
+      h4 {
+        font-family: 'Playfair Display', sans-serif;
+      }
+
+      p {
+        max-width: 20rem;
+      }
+    }
+
+    // Selecting 2nd grid cell
+    &:nth-of-type(2) {
+      text-align: end;
+      margin-right: 4rem;
+
+      // Selecting last paragraph of 2nd grid cell
+      p:last-of-type {
+        margin-bottom: 0; // Removing spacing from the bottom
+      }
+    }
+
+    // 3rd grid cell
+    &:nth-of-type(3) {
+      h4 {
+        margin-bottom: 0; // Spacing outside the element
+      }
+
+      h3 {
+        // Layout
+        margin: 0; // Removing spacing outside the element, bottom
+
+        // Typo
+        font-family: 'Playfair Display', sans-serif;
+        color: #fff;
+        font-weight: 700; // Text thickness
+      }
+    }
+
+    h4 {
+      font-weight: 700; // Text thickness
+      color: #fff;
+    }
+
+    p {
+      font-weight: 300; // Text thickness
+      // max-width: 20rem; // Maximum space horizontally
+    }
+  }
+
+  // Container of buttons
+  &__buttons {
+    display: flex; // Active flexbox
+    margin-top: 1.5rem; // Spacing outside the element, top
+  }
+
+  // Contacts container of the last grid cell
+  &__contact {
+    margin-bottom: 1rem;
+
+    // Selecting all paragraphs
+    p {
+      margin: 0; // Removing spacing outside the element
+
+      // Selecting first paragraph
+      &:nth-of-type(1) {
+        margin: 1rem 0; // Adding spacing outside the 1st paragraph, top-bottom
+      }
+    }
+  }
+}

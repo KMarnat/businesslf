@@ -1,0 +1,20 @@
+/* Services component
+----------------------*/
+.services {
+  max-width: 100rem;
+  margin: 10rem auto;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  &__paragraphs {
+    padding: 3rem 2rem;
+
+    p {
+      font-weight: 300;
+    }
+  }
+}

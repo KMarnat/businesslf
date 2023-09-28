@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App.jsx';
-import './index.scss';
+import './scss/index.scss';
 import Homepage from './pages/Homepage/Homepage';
 import ContactPage from './pages/ContactPage/ContactPage';
 import SignupPage from './pages/SignupPage/SignupPage';
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: '/home',
+        path: '',
         element: <Homepage />,
       },
       {
@@ -31,6 +31,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider route={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

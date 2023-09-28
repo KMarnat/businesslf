@@ -1,0 +1,54 @@
+:root {
+  --main-bg-color: #fff;
+  --secondary-bg-color: #d9d9d9; // Placeholder for images
+  --tertiary-bg-color: #0f4431; // Footer
+  --main-text-color: #0f4431; // h1-h5
+  --secondary-text-color: #5d9b7c; // Registration page (input field names), buttons
+  --tertiary-text-color: #000000; // Paragraphs
+}
+
+// Used for banner image. When resizing the image still fits in it's container without stretching it
+.adaptive {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-photo {
+    // height: 150px /*This is what determines the height of your image*/
+    flex-grow: 1;
+
+    img {
+      max-height: 100%;
+      min-width: 100%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      vertical-align: bottom;
+    }
+  }
+}
+
+/* Global media query variables
+--------------------------------*/
+// Very small devices (portrait phones, 320px and down)
+$breakpoint-mobile-xs: '(max-width: 20em)';
+
+// Small devices (portrait phones, 428px and down)
+$breakpoint-mobile-portrait: '(max-width: 26.75em)';
+
+// Small devices (landscape phones, 576px and down)
+$breakpoint-mobile-landscape: '(max-width: 36em)';
+
+// Medium devices (portrait tablets, 768px and down)
+$breakpoint-tablet-portrait: '(max-width: 48em)';
+
+// Medium devices (landscape tablets, 1024px and down)
+$breakpoint-tablet-landscape: '(max-width: 63.99em)';
+
+// Large devices (desktops, 992px and down)
+$breakpoint-large: '(max-width: 62em)';
+
+// Extra large devices (desktops, 1200px and down)
+$breakpoint-xlarge: '(max-width: 74.99em)';
+
+// Extra large devices (large desktops, 1400px and down)
+$breakpoint-xxlarge: '(max-width: 87.5em)';

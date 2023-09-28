@@ -1,0 +1,16 @@
+@import './reset';
+@import './typography';
+@import './app';
+// pages
+@import '../pages/Homepage/homepage';
+@import '../pages/ContactPage/contactpage';
+@import '../pages/SignupPage/signuppage';
+// components
+@import '../components/Header/header';
+@import '../components/Banner/banner';
+@import '../components/Intro/intro';
+@import '../components/Services/services';
+@import '../components/ContactCta/contactcta';
+@import '../components/Button/button';
+@import '../components/HistoryGrid/historygrid';
+@import '../components/Footer/footer';

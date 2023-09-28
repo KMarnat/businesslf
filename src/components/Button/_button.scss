@@ -1,0 +1,27 @@
+/* Button component
+---------------------*/
+.btn {
+  width: 13rem;
+  height: 3rem;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    border: 2px solid #0f4431;
+  }
+
+  &--primary {
+    background-color: var(--tertiary-bg-color);
+  }
+
+  &--secondary {
+    background-color: #506e65;
+  }
+}
