@@ -1,0 +1,40 @@
+/* UserTierSingle component
+----------------------------*/
+.singletier {
+  max-width: 21rem;
+  height: fit-content;
+  margin: 5rem 2rem;
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+
+  // Tier name
+  &__title {
+    // Typo
+    font-size: 1.75rem;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--main-text-color);
+    // margin-bottom: ;
+  }
+
+  &__slogan {
+    font-size: 0.8rem;
+  }
+
+  &__benefits {
+    // Layout
+    padding-left: 1rem;
+
+    // Typo
+    font-weight: 300;
+  }
+
+  &__price {
+    font-size: 1.35rem;
+    color: #5d9b7c;
+  }
+
+  &__description {
+    font-weight: 300;
+  }
+}

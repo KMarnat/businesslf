@@ -1,0 +1,31 @@
+/* TimeAndPlace component
+---------------------------*/
+.aside {
+  position: absolute;
+  inset: 0 0 0 auto;
+  border-top: 5px solid var(--tertiary-bg-color);
+  border-bottom: 5px solid var(--tertiary-bg-color);
+  height: fit-content;
+  padding-right: 5rem;
+  margin: auto 5rem auto 0;
+  font-weight: 700;
+  // margin
+
+  p {
+    color: #5d9b7c;
+  }
+
+  h5 {
+    margin-bottom: 1rem;
+  }
+
+  &__time,
+  &__location {
+    margin-bottom: 2rem;
+  }
+
+  &__time p,
+  &__location p {
+    margin-bottom: 0;
+  }
+}

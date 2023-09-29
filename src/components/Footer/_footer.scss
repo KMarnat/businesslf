@@ -75,6 +75,11 @@
   &__buttons {
     display: flex; // Active flexbox
     margin-top: 1.5rem; // Spacing outside the element, top
+
+    // Selecting first button of the container
+    .btn:nth-of-type(1) {
+      margin-right: 2rem; // Adding space on the right to give a gap between the buttons
+    }
   }
 
   // Contacts container of the last grid cell

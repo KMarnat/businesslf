@@ -1,12 +1,8 @@
-function Intro({ children }) {
+function Intro({ heading, modifier, children }) {
   return (
     <section className="intro">
-      <div className="intro__content">
-        <h4>INTROTEKST</h4>
-        <h2>
-          TEM QUI UT QUIS VERRO VOLOREM ILIC TE DOLORRO REMPOREPRA DUCIA PORIO TEM SINCI ALIT ODIS
-          UT A DOLU
-        </h2>
+      <div className={`intro__content ${modifier}`}>
+        <h4>{heading}</h4>
         {children}
       </div>
     </section>

@@ -10,24 +10,25 @@ function Homepage() {
     <>
       <Banner source={bannerImgOne} />
       <main>
-        <Intro>
+        <Intro heading={'INFOTEKST'}>
+          <h2>
+            TEM QUI UT QUIS VERRO VOLOREM ILIC TE DOLORRO REMPOREPRA DUCIA PORIO TEM SINCI ALIT ODIS
+            UT A DOLU
+          </h2>
           <p>
-            <p>
-              Emporemque si diciati dolore poriate pellatum ipicit acepudam fuga. Tem qui ut quis
-              verro volorem ilic te dolorro remporepra ducia porio tem sinci alit odis ut a
-              doluptatur maxim exerro dolecae offic temporehent praerfe rspelis miligni aut etum et
-              fugias dolorumquam volut quia dolorer ibusdae re velitisimet volo molorempel endam
-              secatia num fugias inctorionsed quo bea dendundis denda por simus eatia dolesti bustis
-              sincid quaernatur, qui
-              {/* eslint-disable-next-line react/no-unescaped-entities */}
-              im hil illuptatur, que officiatur? (Kilde: "Erhvervsfremme under Lup, 2016")
-            </p>
+            Emporemque si diciati dolore poriate pellatum ipicit acepudam fuga. Tem qui ut quis
+            verro volorem ilic te dolorro remporepra ducia porio tem sinci alit odis ut a doluptatur
+            maxim exerro dolecae offic temporehent praerfe rspelis miligni aut etum et fugias
+            dolorumquam volut quia dolorer ibusdae re velitisimet volo molorempel endam secatia num
+            fugias inctorionsed quo bea dendundis denda por simus eatia dolesti bustis sincid
+            quaernatur, qui
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
+            im hil illuptatur, que officiatur? (Kilde: "Erhvervsfremme under Lup, 2016")
           </p>
         </Intro>
         <Services />
         <ContactCta />
         <HistoryGrid />
-        <section></section>
       </main>
     </>
   );
