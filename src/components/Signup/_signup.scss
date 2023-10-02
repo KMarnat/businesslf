@@ -1,30 +1,44 @@
 /* Signup component
 -----------------------*/
 .signup {
+  display: flex;
+  justify-content: center;
   background-color: #f4f4f4;
 
+  // Content container
   &__content {
-    max-width: 80rem;
-    margin: 0rem auto;
-    padding: 2rem 0;
+    max-width: 80rem; // Max space taken horizontally
+    padding: 2rem 0; // Spacing inside the element, top-bottom, left-right
   }
 
+  // Account tier selection title
   &__tier {
     color: #5d9b7c;
-    font-size: 1.25rem;
-    font-weight: 500;
+    font-size: 1.25rem; // Text size
+    font-weight: 500; // Text thickness
   }
 
-  .form {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+  // Welcome message container
+  &__welcome {
+    // Welcome text title
+    h2 {
+      font-style: italic; // Text style
+    }
+  }
 
+  // Signup form
+  .form {
+    display: grid; // Activate grid
+    grid-template-columns: repeat(3, 1fr); // 3 columns, 1fr width for each column
+    grid-template-rows: repeat(2, 1fr); // 1fr height for each row
+
+    // Labels for tier selection inside the form
     &__tier {
       font-size: 1.25rem;
       display: flex;
       font-weight: 300;
 
+      // Radio buttons inside tier labels
       input {
         margin-right: 1.5rem;
         accent-color: #5d9b7c;
@@ -33,6 +47,7 @@
       }
     }
 
+    // Contact info labels
     &__label {
       // Layout
       display: flex;
@@ -44,18 +59,26 @@
       font-weight: 500;
       font-size: 1.25rem;
 
-      &--big {
-        grid-column: span 3;
-        margin-bottom: 1rem;
+      // Contact info inputs
+      input {
+        border: none; // Removing border
+      }
 
+      // Container of the text area at the end of the form
+      &--big {
+        grid-column: span 3; // Text area spanning across 3 columns
+        margin-bottom: 1rem; // Spacing outside the element, bottom
+
+        // Text area element
         textarea {
-          border: none;
+          border: none; // Removing border
         }
       }
-
-      input {
-        border: none;
-      }
     }
+  }
+
+  // Exra paragraph on the contact page
+  &__message {
+    grid-column: span 3; // Text area spanning across 3 columns
   }
 }

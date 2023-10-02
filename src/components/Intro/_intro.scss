@@ -1,38 +1,50 @@
 /* Intro component
 -----------------*/
 .intro {
-  max-width: 100rem;
-  margin: 0 auto;
+  max-width: 100rem; // Max space taken horizontally
+  margin: 0 auto; // Spacing outside the element, top-bottom, left-right (auto centers horizontally)
 
+  // Content container
   &__content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    position: relative;
-    margin: -5rem 2rem 0;
-    padding: 2rem;
+    display: flex; // Activate flexbox
+    flex-direction: column; // Stacking items on top of each other
+    text-align: center; // Aligning text center
+    align-items: center; // Aligning items center on the main axis
+    position: relative; // Let's the position be set with top, left etc.
+    margin: -5rem 2rem 0; // Spacing outside the element. Negative margin on top pulls it top
+    padding: 2rem; // Spacing inside the element
     background-color: var(--main-bg-color);
 
+    // Container title
     h2 {
-      max-width: 70rem;
+      max-width: 70rem; // Maximum space taken horizontally
+
+      @media #{$breakpoint-tablet-landscape} {
+        font-size: 2rem;
+      }
     }
 
+    // Content paragraph
     p {
       font-family: 'Outfit', sans-serif;
-      // max-width: 50rem;
+      max-width: 50rem; // Maximum space taken horizontally
     }
 
+    // Modified class added on the contact page
     &--modified {
-      text-align: left;
-      align-items: baseline;
-      padding-right: 50rem;
-      position: relative;
-      font-weight: 300;
+      flex-direction: row; // Changing flex direction from 'column' to 'row'
+      justify-content: space-between; // Spacing between elements
+      text-align: left; // Aligning text back to 'left' from 'center'
 
+      // This ul is only in the contacats page
       ul {
-        padding-left: 1rem;
+        padding-left: 1rem; // Spacing inside the element, left side
       }
+    }
+
+    // Modified content container when on contact page
+    &--small {
+      max-width: 50rem; // Max space taken horizontally
     }
   }
 }

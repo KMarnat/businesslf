@@ -1,0 +1,39 @@
+/* Imported FaQ component custom styles
+----------------------------- */
+.faq {
+  // Each row of the grid cell
+  &-row {
+    // Single question wrapper
+    &-wrapper {
+      max-width: 30rem; // Maximum space it takes horizontally
+
+      // Selecting 2nd faq grid
+      &:nth-of-type(2) {
+        margin-top: 6.625rem; // Adding spacing above the element to line it up with the first one
+        border-top: 1px solid #ccc; // Adding missing border top, because that side doesn't have title with the border under it
+      }
+    }
+  }
+
+  // Container of the title
+  &-title {
+    // Title
+    h2 {
+      // Overriding styles of the component to the default projects styles
+      // Need to include "!important" to override styles
+      margin: 2rem 0 1.5rem !important; // Spacing outside the element. Adding default margins so it would match the other h2 styles
+      color: var(--main-text-color) !important; // Text color
+      font-style: italic; // Text style
+    }
+  }
+}
+
+// Icon container,  either "+" or "-", depending on wether it's closed or not
+// Need to include "!important" to override styles
+.icon-wrapper {
+  top: auto !important; // Removing positioning from the top
+  transform: none !important; // Removing rotation transformation
+  color: #5d9b7c !important; // Changing color
+  font-size: 2rem; // Size of the icon
+  max-height: none !important; // Removing restricting max height
+}

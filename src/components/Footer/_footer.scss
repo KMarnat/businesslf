@@ -1,18 +1,21 @@
 /* Footer component
 ------------------*/
 .footer {
-  // height: 40rem;
-  width: 100%;
+  display: flex;
+  justify-content: center;
   background-color: var(--tertiary-bg-color);
   color: #fff;
 
   &__grid {
-    max-width: 100rem;
-    margin: 0 auto; // Spacing outside the element, auto on left and right centers it
+    margin: 0 1rem;
     display: grid; // Activate grid
     grid-template-columns: 2fr repeat(2, 1fr); // Grid layout
     grid-template-rows: 1fr; // Grid layout
     padding-bottom: 2rem; // Spacing inside the grid, bottom
+
+    @media #{$breakpoint-tablet-landscape} {
+      grid-template-columns: repeat(2, 1fr); // Grid layout
+    }
   }
 
   // Footer grid cell
@@ -23,12 +26,17 @@
 
     // Selecting first grid cell
     &:nth-of-type(1) {
+      @media #{$breakpoint-tablet-landscape} {
+        grid-column: span 3;
+        align-items: center;
+      }
+
       h4 {
         font-family: 'Playfair Display', sans-serif;
       }
 
       p {
-        max-width: 20rem;
+        max-width: 20rem; // Maximum space taken horizontally
       }
     }
 

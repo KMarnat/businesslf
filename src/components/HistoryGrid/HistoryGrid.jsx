@@ -4,22 +4,22 @@ function HistoryGrid() {
   return (
     <section className="history">
       <div className="history__grid">
-        <div className="adaptive ">
+        <div className="history__image adaptive ">
           <div className="adaptive-photo">
             <img src={historyImg} alt="" />
           </div>
         </div>
-        <div className="adaptive ">
+        <div className="history__image adaptive ">
           <div className="adaptive-photo">
             <img src={historyImg} alt="" />
           </div>
         </div>
-        <div className="adaptive ">
+        <div className="history__image adaptive ">
           <div className="adaptive-photo">
             <img src={historyImg} alt="" />
           </div>
         </div>
-        <div className="adaptive ">
+        <div className="history__image adaptive ">
           <div className="adaptive-photo">
             <img src={historyImg} alt="" />
           </div>
@@ -33,7 +33,7 @@ function HistoryGrid() {
             esedit eos deles debistem voluptint asperumqui que consero quam volora quat.
           </p>
         </div>
-        <div className="adaptive ">
+        <div className="history__image adaptive ">
           <div className="adaptive-photo">
             <img src={historyImg} alt="" />
           </div>

@@ -1,40 +1,43 @@
 /* UserTierSingle component
 ----------------------------*/
 .singletier {
-  max-width: 21rem;
-  height: fit-content;
-  margin: 5rem 2rem;
-  border-top: 1px solid #707070;
-  border-bottom: 1px solid #707070;
+  max-width: 21rem; // Max space taken horizontally
+  height: fit-content; // Size of the element depends on the contents size inside it
+  margin: 5rem 2rem; // Spacing outside the element, top-bottom, left-right
+  border-top: 1px solid #707070; // Border styles for top
+  border-bottom: 1px solid #707070; // Border styles for top
 
   // Tier name
   &__title {
     // Typo
-    font-size: 1.75rem;
-    font-weight: 300;
-    font-style: italic;
+    font-size: 1.75rem; // Text size
+    font-weight: 300; // Text thickness
+    font-style: italic; // Text style
     color: var(--main-text-color);
-    // margin-bottom: ;
   }
 
+  // Tier subheading
   &__slogan {
-    font-size: 0.8rem;
+    font-size: 0.8rem; // Text size
   }
 
+  // List of benefits
   &__benefits {
     // Layout
-    padding-left: 1rem;
+    padding-left: 1rem; // Spacing inside the elment, left
 
     // Typo
-    font-weight: 300;
+    font-weight: 300; // Text thickness
   }
 
+  // Price container
   &__price {
-    font-size: 1.35rem;
+    font-size: 1.35rem; // Text size
     color: #5d9b7c;
   }
 
+  // Description of the tier
   &__description {
-    font-weight: 300;
+    font-weight: 300; // Text thickness
   }
 }

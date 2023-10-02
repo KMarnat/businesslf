@@ -1,0 +1,15 @@
+/* Quote component
+-------------------- */
+.quote {
+  display: flex; // Activate flexbox
+  flex-direction: column; // Stacking items on top of each other
+  align-items: center; // Aligning center on the cross axis
+  text-align: center; // Centering text
+  margin: 5rem 0; // Spacing outside the element, top-bottom, left-right
+  font-weight: 300; // Text thickness
+
+  // Title of the quote
+  h2 {
+    font-style: italic; // Text style
+  }
+}

@@ -1,20 +1,47 @@
 /* Services component
 ----------------------*/
 .services {
-  max-width: 100rem;
-  margin: 10rem auto;
+  display: flex; // Activate flexbox
+  justify-content: center; // Align center on the main axis
+  margin: 5rem 0 7rem; // Spacing outside the element, top, left-right, bottom
 
-  &__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
+  @media #{$breakpoint-tablet-landscape} {
+    margin: 5rem 2rem 7rem; // Spacing outside the element, top, left-right, bottom
   }
 
-  &__paragraphs {
-    padding: 3rem 2rem;
+  // Grid container
+  &__grid {
+    display: grid; // Activate grid
+    grid-template-columns: repeat(3, 1fr); // 3 columns, even width
+    max-width: 100rem; // Max space taken horizontally
 
+    @media #{$breakpoint-tablet-landscape} {
+      grid-template-columns: repeat(1, 1fr); // 3 columns, even width
+    }
+  }
+
+  &__image {
+    .adaptive-photo {
+      @media #{$breakpoint-tablet-landscape} {
+        height: 15rem;
+      }
+    }
+  }
+
+  // Middle cell, containing paragraphs
+  &__paragraphs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 2rem; // Spacing inside the element, top-bottom, left-right
+
+    @media #{$breakpoint-tablet-landscape} {
+      padding: 0.5rem;
+    }
+
+    // paragraph element
     p {
-      font-weight: 300;
+      font-weight: 300; // Text thickness
     }
   }
 }

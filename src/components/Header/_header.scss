@@ -1,21 +1,30 @@
 /* Header component
 -------------------*/
 .header {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  position: sticky;
-  padding: 2rem 10rem;
-  top: 0;
+  display: flex; // Activate flexbox
+  justify-content: space-between; // Even spacing between elements
+  position: sticky; // Header stays in place when scrolling
+  padding: 2rem 10rem; // Spacing inside the element, top-bottom, left-right
+  top: 0; // Positioning from the top
   background-color: var(--main-bg-color);
-  z-index: 10;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  z-index: 10; // Positioning on the Z axis
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12); // Header shadow, so it would be visually clear where the header is
 
+  @media #{$breakpoint-tablet-landscape} {
+    padding: 2rem 5rem;
+  }
+
+  // Nav menu
   .nav {
+    // List
     &__list {
-      display: flex;
-      list-style: none;
-      gap: 3rem;
+      display: flex; // Activate flexbox
+      list-style: none; // Removing dots
+    }
+
+    // List item
+    &__item {
+      margin-left: 3rem; // Spacing outside the element, left side
     }
   }
 }

@@ -1,0 +1,13 @@
+/* FaQ component
+-----------------*/
+.questions {
+  display: flex; // Activate flexbox
+  justify-content: center; // Centering on the main axis
+  column-gap: 3rem; // Gap between the columns
+
+  // Question grid
+  &__grid {
+    display: grid; // Activate grid
+    grid-template-columns: repeat(2, 1fr); // 2 columns, equal width
+  }
+}

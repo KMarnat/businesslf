@@ -1,6 +1,7 @@
 @import './reset';
 @import './typography';
 @import './app';
+@import './faq';
 // pages
 @import '../pages/Homepage/homepage';
 @import '../pages/ContactPage/contactpage';
@@ -18,3 +19,5 @@
 @import '../components/UserTierSingle/usertiersingle';
 @import '../components/Signup/signup';
 @import '../components/TimeAndPlace/timeandplace';
+@import '../components/Questions/questions';
+@import '../components/Quote/quote';

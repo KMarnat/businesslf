@@ -1,26 +1,33 @@
 /* HistoryGrid component
 ------------------------*/
 .history {
-  max-width: 100rem;
-  margin: 10rem auto;
+  display: flex; // Activate flexbox
+  justify-content: center; // Centering content on the main axis
+  margin: 7rem 0; // Spacing outside the element, top-bottom, left-right
 
+  // Grid containing images and text
   &__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
+    display: grid; // Activate grid
+    grid-template-columns: repeat(3, 1fr); // 3 columns, 1fr each in width
+    max-width: 100rem;
   }
 
-  &__description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  // Selecting each cell that has image in it
+  &__image {
+    margin: 0.5rem; // Spacing outside the element
+  }
 
+  // The one cell with text instead of an image
+  &__description {
+    display: flex; // Activate flexbox
+    flex-direction: column; // Stacking items on top of each other
+    align-items: center; // Aligning center on the cross axis
+    justify-content: center; // Aligning center on the main axis
+    text-align: center; // Centering text
+
+    // Paragraph inside the description cell
     p {
-      max-width: 20rem;
+      max-width: 20rem; // Max space available horizontally
     }
   }
 }
