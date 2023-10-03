@@ -16,6 +16,10 @@
     @media #{$breakpoint-tablet-landscape} {
       grid-template-columns: repeat(2, 1fr); // Grid layout
     }
+
+    @media #{$breakpoint-mobile-landscape} {
+      grid-template-columns: repeat(1, 1fr); // Grid layout
+    }
   }
 
   // Footer grid cell
@@ -24,11 +28,19 @@
     flex-direction: column; // Stacking items above one another
     justify-content: flex-end; // Moving items to the bottom on the cross axis
 
+    @media #{$breakpoint-mobile-landscape} {
+      text-align: center;
+    }
+
     // Selecting first grid cell
     &:nth-of-type(1) {
       @media #{$breakpoint-tablet-landscape} {
         grid-column: span 3;
         align-items: center;
+      }
+
+      @media #{$breakpoint-mobile-landscape} {
+        grid-column: 1;
       }
 
       h4 {
@@ -45,18 +57,25 @@
       text-align: end;
       margin-right: 4rem;
 
+      @media #{$breakpoint-mobile-landscape} {
+        margin: 2rem 0 0;
+        text-align: center;
+      }
+
       // Selecting last paragraph of 2nd grid cell
       p:last-of-type {
         margin-bottom: 0; // Removing spacing from the bottom
       }
     }
 
-    // 3rd grid cell
+    // Selecting 3rd grid cell
     &:nth-of-type(3) {
+      // First company name
       h4 {
         margin-bottom: 0; // Spacing outside the element
       }
 
+      // Second company name
       h3 {
         // Layout
         margin: 0; // Removing spacing outside the element, bottom
@@ -68,11 +87,13 @@
       }
     }
 
+    // Grid cell title
     h4 {
       font-weight: 700; // Text thickness
       color: #fff;
     }
 
+    // Grid cell paragraph elements
     p {
       font-weight: 300; // Text thickness
       // max-width: 20rem; // Maximum space horizontally
@@ -84,9 +105,18 @@
     display: flex; // Active flexbox
     margin-top: 1.5rem; // Spacing outside the element, top
 
+    @media #{$breakpoint-mobile-landscape} {
+      flex-direction: column; // Stacking the 2 buttons on top of each other
+    }
+
     // Selecting first button of the container
     .btn:nth-of-type(1) {
       margin-right: 2rem; // Adding space on the right to give a gap between the buttons
+
+      @media #{$breakpoint-mobile-landscape} {
+        margin-right: 0; // Removing spacing outside the element, right
+        margin-bottom: 1rem; // Adding spacing outside the element, bottom
+      }
     }
   }
 

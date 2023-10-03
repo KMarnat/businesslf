@@ -6,6 +6,10 @@
   padding-right: 5rem; // Spacing inside the element, right side
   font-weight: 700; // Text thickness
 
+  @media #{$breakpoint-tablet-portrait} {
+    margin: 2rem 0;
+  }
+
   // Paragraph element
   p {
     color: #5d9b7c;

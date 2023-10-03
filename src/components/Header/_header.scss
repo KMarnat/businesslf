@@ -1,21 +1,58 @@
 /* Header component
 -------------------*/
 .header {
-  display: flex; // Activate flexbox
-  justify-content: space-between; // Even spacing between elements
-  position: sticky; // Header stays in place when scrolling
-  padding: 2rem 10rem; // Spacing inside the element, top-bottom, left-right
-  top: 0; // Positioning from the top
-  background-color: var(--main-bg-color);
-  z-index: 10; // Positioning on the Z axis
+  position: fixed; // Header stays in place when scrolling
+  width: 100%; // Take up as much space horizontally as possible
+  z-index: 15; // Positioning on the Z axis
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12); // Header shadow, so it would be visually clear where the header is
 
-  @media #{$breakpoint-tablet-landscape} {
-    padding: 2rem 5rem;
+  &__bg {
+    display: flex; // Activate flexbox
+    justify-content: space-between; // Even spacing between elements
+    align-items: center; // Align items center on cross axis
+    padding: 2rem 10rem; // Spacing inside the element, top-bottom, left-right
+    background-color: var(--main-bg-color);
+
+    @media #{$breakpoint-tablet-landscape} {
+      padding: 2rem 5rem; // Spacing inside the element, top-bottom, left-right
+    }
+
+    @media #{$breakpoint-tablet-portrait} {
+      padding: 1rem 2rem; // Spacing inside the element, top-bottom, left-right
+    }
+  }
+
+  &__logo {
+    z-index: 5; // Positioning on the Z axis
+  }
+
+  // Hamburger menu that replaces nav menu
+  &__menu {
+    display: none; // Hiding the element until a certain screen size
+    height: 1.5rem;
+
+    @media #{$breakpoint-mobile-landscape} {
+      display: block; // Eleement becomes visible
+    }
   }
 
   // Nav menu
   .nav {
+    @media #{$breakpoint-mobile-landscape} {
+      display: none; // Hiding element at a certain screen size
+    }
+
+    &--mobile {
+      position: absolute; // Needed for positioning
+      inset: 0 0 0 auto; // Positioning top right corner
+      transform: translateY(-4rem); // Moving the element up on Y axis
+      transition: 0.3s ease-in-out; // Animation settings
+      z-index: -1; // Position on the Z axis
+      border-bottom-left-radius: 1rem; // Adjusting corner smoothness, bottom left
+      height: fit-content; // Height is depends on the content inside it
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12); // Header shadow, so it would be visually clear where the header is
+    }
+
     // List
     &__list {
       display: flex; // Activate flexbox
@@ -25,6 +62,31 @@
     // List item
     &__item {
       margin-left: 3rem; // Spacing outside the element, left side
+      transition: 0.3s ease-in-out;
+
+      // Hover effect
+      &:hover {
+        transform: scale(1.2); // Hovering the nav item transform it's size by 120%
+      }
+
+      // Modified nav item, mobile view nav bar
+      &--modified {
+        margin: 0; // Removing spacing outside the element
+      }
     }
+
+    // Class for modified nav, smaller screen
+    &--column {
+      flex-direction: column; // Stacking
+      padding: 1rem; // Spacing inside the element
+      margin: 0; // Removing spacing outside the element
+      background-color: #fff;
+      border-bottom-left-radius: 1rem; // Adjusting corner smoothness, bottom left
+    }
+  }
+
+  // When menu button is clicked the nav menu slides in from top on Y axis
+  .activated {
+    transform: translateY(4rem); // Positin change on Y axis
   }
 }

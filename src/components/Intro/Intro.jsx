@@ -3,7 +3,7 @@ import TimeAndPlace from '../TimeAndPlace/TimeAndPlace';
 function Intro({ subHeading, heading, modifier, paragraph, children }) {
   const routeName = window.location.pathname;
   return (
-    <section className="intro">
+    <section className="intro" data-scroll-container>
       <div className={`intro__content ${modifier}`}>
         {routeName === '/contact' ? (
           <>

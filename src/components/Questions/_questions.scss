@@ -4,6 +4,12 @@
   display: flex; // Activate flexbox
   justify-content: center; // Centering on the main axis
   column-gap: 3rem; // Gap between the columns
+  margin: 0 1rem; // Spacing outside the element, top-bottom, left-right
+
+  @media #{$breakpoint-tablet-portrait} {
+    flex-direction: column; // Stacking questions containers on top of each other
+    align-items: center; // Aligning elements center, cross axis
+  }
 
   // Question grid
   &__grid {

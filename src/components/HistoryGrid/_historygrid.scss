@@ -5,16 +5,31 @@
   justify-content: center; // Centering content on the main axis
   margin: 7rem 0; // Spacing outside the element, top-bottom, left-right
 
+  @media #{$breakpoint-tablet-landscape} {
+    margin: 4rem 0; // Spacing outside the element, top-bottom, left-right
+  }
+
   // Grid containing images and text
   &__grid {
     display: grid; // Activate grid
     grid-template-columns: repeat(3, 1fr); // 3 columns, 1fr each in width
     max-width: 100rem;
+
+    @media #{$breakpoint-mobile-landscape} {
+      grid-template-columns: repeat(2, 1fr); // 3 columns, 1fr each in width
+    }
   }
 
   // Selecting each cell that has image in it
   &__image {
     margin: 0.5rem; // Spacing outside the element
+
+    // Selecting last image of the grid
+    &:last-of-type {
+      @media #{$breakpoint-mobile-landscape} {
+        display: none; // Hiding it
+      }
+    }
   }
 
   // The one cell with text instead of an image
@@ -23,7 +38,12 @@
     flex-direction: column; // Stacking items on top of each other
     align-items: center; // Aligning center on the cross axis
     justify-content: center; // Aligning center on the main axis
-    text-align: center; // Centering text
+    text-align: center; // Centering text.
+
+    @media #{$breakpoint-mobile-landscape} {
+      grid-column: span 2; // Spans across 2 columns
+      grid-row: 2; // Moved to 2nd grid row
+    }
 
     // Paragraph inside the description cell
     p {

@@ -4,11 +4,12 @@
   display: flex;
   justify-content: center;
   background-color: #f4f4f4;
+  padding: 0 1rem;
 
   // Content container
   &__content {
     max-width: 80rem; // Max space taken horizontally
-    padding: 2rem 0; // Spacing inside the element, top-bottom, left-right
+    padding: 4rem 0; // Spacing inside the element, top-bottom, left-right
   }
 
   // Account tier selection title
@@ -23,6 +24,14 @@
     // Welcome text title
     h2 {
       font-style: italic; // Text style
+
+      @media #{$breakpoint-tablet-landscape} {
+        font-size: 2rem;
+      }
+    }
+
+    p {
+      font-weight: 300;
     }
   }
 
@@ -32,32 +41,55 @@
     grid-template-columns: repeat(3, 1fr); // 3 columns, 1fr width for each column
     grid-template-rows: repeat(2, 1fr); // 1fr height for each row
 
+    @media #{$breakpoint-large} {
+      grid-template-columns: repeat(2, 1fr); // 3 columns, 1fr width for each column
+    }
+
+    @media #{$breakpoint-mobile-landscape} {
+      grid-template-columns: repeat(1, 1fr); // 1 columns, 1fr width for each column
+    }
+
     // Labels for tier selection inside the form
     &__tier {
       font-size: 1.25rem;
       display: flex;
       font-weight: 300;
 
+      // Third radio button
+      &:nth-of-type(3) {
+        @media #{$breakpoint-large} {
+          grid-column: span 2; // Element spans accros 2 columns
+          margin-bottom: 1rem; // Spacing outside the element: bottom
+        }
+
+        @media #{$breakpoint-mobile-landscape} {
+          grid-column: 1; // Element's width set back to 1 column
+        }
+      }
+
       // Radio buttons inside tier labels
       input {
-        margin-right: 1.5rem;
-        accent-color: #5d9b7c;
-        width: 2rem;
-        height: 2rem;
+        margin-right: 1.5rem; // Spacing outside the element: right
+        accent-color: #5d9b7c; // Color of the radio buttons when checked
+        width: 2rem; // Radio button width
+        height: 2rem; // Radio button height
       }
     }
 
     // Contact info labels
     &__label {
       // Layout
-      display: flex;
-      flex-direction: column;
-      margin: 0.5rem 2rem 0 0;
+      display: flex; // Activate flexbox
+      flex-direction: column; // Stacking items on top of each other
+      margin: 0.5rem 2rem 0 0; // Spacing outside the element
 
       // Typo
-      color: #5d9b7c;
-      font-weight: 500;
+      color: #5d9b7c; // Text color
       font-size: 1.25rem;
+
+      @media #{$breakpoint-mobile-landscape} {
+        margin: 1rem 0 0 0; // Spacing outside the element
+      }
 
       // Contact info inputs
       input {
@@ -68,6 +100,14 @@
       &--big {
         grid-column: span 3; // Text area spanning across 3 columns
         margin-bottom: 1rem; // Spacing outside the element, bottom
+
+        @media #{$breakpoint-large} {
+          grid-column: span 2; // Text area spanning across 2 columns
+        }
+
+        @media #{$breakpoint-mobile-landscape} {
+          grid-column: 1; // Text area spanning across 1 column
+        }
 
         // Text area element
         textarea {
@@ -80,5 +120,13 @@
   // Exra paragraph on the contact page
   &__message {
     grid-column: span 3; // Text area spanning across 3 columns
+
+    @media #{$breakpoint-large} {
+      grid-column: span 2; // Text area spanning across 2 columns
+    }
+
+    @media #{$breakpoint-mobile-landscape} {
+      grid-column: 1; // Text area spanning across 1 column
+    }
   }
 }

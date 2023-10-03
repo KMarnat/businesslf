@@ -2,6 +2,7 @@
 @import './typography';
 @import './app';
 @import './faq';
+@import '../../node_modules/locomotive-scroll/src/locomotive-scroll.scss';
 // pages
 @import '../pages/Homepage/homepage';
 @import '../pages/ContactPage/contactpage';

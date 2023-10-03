@@ -20,6 +20,7 @@
     }
   }
 
+  // Grid cell containing an image
   &__image {
     .adaptive-photo {
       @media #{$breakpoint-tablet-landscape} {
@@ -30,13 +31,13 @@
 
   // Middle cell, containing paragraphs
   &__paragraphs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: flex; // Active flexbox
+    flex-direction: column; // Stacking elements on top of each other
+    justify-content: center; // Aligning elements center on the main axis
     padding: 3rem 2rem; // Spacing inside the element, top-bottom, left-right
 
     @media #{$breakpoint-tablet-landscape} {
-      padding: 0.5rem;
+      padding: 0.5rem; // Spacing inside the element
     }
 
     // paragraph element

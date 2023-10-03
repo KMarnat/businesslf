@@ -13,9 +13,17 @@
     text-align: center; // Aligning text center
     color: #506e65; // Text color
 
+    @media #{$breakpoint-mobile-landscape} {
+      padding: 1rem 1.5rem; // Spacing inside the element, top-bottom, left-right
+    }
+
     h1 {
       @media #{$breakpoint-tablet-landscape} {
-        font-size: 3.5rem;
+        font-size: 3.5rem; // Text size
+      }
+
+      @media #{$breakpoint-mobile-landscape} {
+        font-size: 2.5rem; // Text size
       }
     }
   }

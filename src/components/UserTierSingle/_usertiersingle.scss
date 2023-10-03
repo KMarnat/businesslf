@@ -1,11 +1,15 @@
 /* UserTierSingle component
 ----------------------------*/
 .singletier {
-  max-width: 21rem; // Max space taken horizontally
+  max-width: 22rem; // Max space taken horizontally
   height: fit-content; // Size of the element depends on the contents size inside it
   margin: 5rem 2rem; // Spacing outside the element, top-bottom, left-right
   border-top: 1px solid #707070; // Border styles for top
   border-bottom: 1px solid #707070; // Border styles for top
+
+  @media #{$breakpoint-tablet-portrait} {
+    margin: 0.5rem 1rem 3rem; // Spacing outside the element, top-bottom, left-right
+  }
 
   // Tier name
   &__title {
