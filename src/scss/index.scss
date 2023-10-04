@@ -2,7 +2,6 @@
 @import './typography';
 @import './app';
 @import './faq';
-@import '../../node_modules/locomotive-scroll/src/locomotive-scroll.scss';
 // pages
 @import '../pages/Homepage/homepage';
 @import '../pages/ContactPage/contactpage';
@@ -22,3 +21,6 @@
 @import '../components/TimeAndPlace/timeandplace';
 @import '../components/Questions/questions';
 @import '../components/Quote/quote';
+// Locomotive scroll
+@import '../../node_modules/locomotive-scroll/src/locomotive-scroll.scss';
+@import './animations';

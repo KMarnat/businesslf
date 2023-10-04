@@ -14,6 +14,8 @@
     display: grid; // Activate grid
     grid-template-columns: repeat(3, 1fr); // 3 columns, even width
     max-width: 100rem; // Max space taken horizontally
+    opacity: 0;
+    transition: opacity 2s;
 
     @media #{$breakpoint-tablet-landscape} {
       grid-template-columns: repeat(1, 1fr); // 3 columns, even width

@@ -3,8 +3,14 @@ import serviceTwo from '../../assets/serviceTwo.avif';
 
 function Services() {
   return (
-    <section className="services">
-      <div className="services__grid">
+    <section className="services" data-scroll-section>
+      <div
+        className="services__grid"
+        data-scroll-repeat={true}
+        data-scroll-speed="4"
+        data-scroll
+        data-scroll-class="fade-in-element"
+      >
         <div className="adaptive services__image">
           <div className="adaptive-photo">
             <img src={serviceOne} alt="services" />

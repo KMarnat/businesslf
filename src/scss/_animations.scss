@@ -1,0 +1,47 @@
+/* Animations for scroll
+--------------------------*/
+.fade-in-element {
+  opacity: 1;
+}
+
+.fade-out-left {
+  animation: fade-out-left 0.5s ease forwards;
+}
+
+.fade-out-right {
+  animation: fade-out-right 0.5s ease forwards;
+}
+/* Define fade-in animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Define exit animations */
+@keyframes fade-out-left {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes fade-out-right {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}

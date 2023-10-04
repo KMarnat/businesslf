@@ -2,7 +2,7 @@ import historyImg from '../../assets/history.avif';
 
 function HistoryGrid() {
   return (
-    <section className="history">
+    <section className="history" data-scroll-section>
       <div className="history__grid">
         <div className="history__image adaptive ">
           <div className="adaptive-photo">

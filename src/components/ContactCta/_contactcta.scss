@@ -12,6 +12,8 @@
     margin: 0 1rem; // Spacing outside the element, top-bottom, left-right
     text-align: center; // Aligning text center
     color: #506e65; // Text color
+    opacity: 0;
+    transition: opacity 2s;
 
     @media #{$breakpoint-mobile-landscape} {
       padding: 1rem 1.5rem; // Spacing inside the element, top-bottom, left-right

@@ -2,7 +2,7 @@ import Button from '../Button/Button';
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" data-scroll-section>
       <div className="footer__grid">
         <div className="footer__cell">
           <h4>NYT FRA LOLLAND-FALSTER</h4>
