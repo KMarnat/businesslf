@@ -5,16 +5,11 @@
   &-row {
     // Single question wrapper
     &-wrapper {
-      max-width: 30rem; // Maximum space it takes horizontally
-
       // Selecting 2nd faq grid
       &:nth-of-type(2) {
-        margin-top: 6.625rem; // Adding spacing above the element to line it up with the first one
-        border-top: 1px solid #ccc; // Adding missing border top, because that side doesn't have title with the border under it
-
         @media #{$breakpoint-tablet-portrait} {
-          margin-top: 0; // Removing spacing above the element
-          border-top: none; // Removing border from top
+          // margin-top: 0; // Removing spacing above the element
+          // border-top: none; // Removing border from top
         }
       }
     }

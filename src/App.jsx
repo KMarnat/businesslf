@@ -12,22 +12,28 @@ function App() {
     const scroll = new LocomotiveScroll({
       el: scrollRef.current,
       smooth: true,
+      mobile: {
+        smooth: true,
+      },
+      tablet: {
+        smooth: true,
+        breakpoint: 0,
+      },
     });
 
-    scroll.update();
+    const resizeObserver = new ResizeObserver(() => {
+      scroll.update();
+    });
 
-    return () => {
-      scroll.destroy();
-    };
+    const scrollContainer = document.querySelector('[data-scroll-container]');
+    resizeObserver.observe(scrollContainer);
   }, []);
 
   return (
     <>
       <div ref={scrollRef} data-scroll-container>
         <Header />
-
         <Outlet />
-
         <Footer />
       </div>
     </>

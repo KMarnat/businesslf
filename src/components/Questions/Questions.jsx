@@ -4,7 +4,6 @@ import questionsData2 from '../../questionsData2';
 
 function Questions() {
   const config = {
-    // animate: true,
     arrowIcon: 'V',
     openOnload: 0,
     expandIcon: '+',
@@ -12,9 +11,15 @@ function Questions() {
   };
 
   return (
-    <section className="questions">
-      <Faq data={questionsData1} config={config} />
-      <Faq data={questionsData2} config={config} />
+    <section className="questions" data-scroll-section data-scroll-class="fade-in-element">
+      <div className="questions__group" data-scroll data-scroll-speed="2">
+        <div className="questions__one">
+          <Faq data={questionsData1} config={config} />
+        </div>
+        <div className="questions__two">
+          <Faq data={questionsData2} config={config} />
+        </div>
+      </div>
     </section>
   );
 }

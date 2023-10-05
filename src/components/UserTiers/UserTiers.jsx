@@ -12,9 +12,14 @@ function UserTiers() {
   };
 
   return (
-    <section className="usertiers">
+    <section className="usertiers" data-scroll-section>
       <div className="tabs">
-        <div className="tabs__buttons">
+        <div
+          className="tabs__buttons"
+          data-scroll
+          data-scroll-speed="1.5"
+          data-scroll-class="fade-in-element"
+        >
           {tierTitles.map((type, i) => (
             <button
               className={`tabs__btn ${isActive === type && 'active'}`}
@@ -29,6 +34,7 @@ function UserTiers() {
           (tier, i) =>
             tier.title === isActive && (
               <UserTierSingle
+                modifier={'singletier--active'}
                 title={tier.title}
                 slogan={tier.slogan}
                 price={tier.price}
@@ -42,7 +48,12 @@ function UserTiers() {
             )
         )}
       </div>
-      <div className="usertiers--desktop">
+      <div
+        className="usertiers--desktop"
+        data-scroll
+        data-scroll-speed="2"
+        data-scroll-class="fade-in-element"
+      >
         {tiers.map((tier, i) => (
           <UserTierSingle
             title={tier.title}

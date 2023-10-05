@@ -9,7 +9,9 @@
   // Content container
   &__content {
     max-width: 80rem; // Max space taken horizontally
-    padding: 4rem 0; // Spacing inside the element, top-bottom, left-right
+    padding: 1rem 0; // Spacing inside the element, top-bottom, left-right
+    opacity: 0;
+    transition: opacity 2s;
   }
 
   // Account tier selection title

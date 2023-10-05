@@ -3,7 +3,13 @@ import historyImg from '../../assets/history.avif';
 function HistoryGrid() {
   return (
     <section className="history" data-scroll-section>
-      <div className="history__grid">
+      <div
+        className="history__grid"
+        data-scroll
+        data-scroll-speed="2"
+        data-scroll-class="fade-in-element"
+        data-scroll-repeat={true}
+      >
         <div className="history__image adaptive ">
           <div className="adaptive-photo">
             <img src={historyImg} alt="" />

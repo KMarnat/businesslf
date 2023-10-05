@@ -1,6 +1,11 @@
-function UserTierSingle({ title, slogan, price, description, children }) {
+function UserTierSingle({ title, slogan, price, description, modifier, children }) {
   return (
-    <article className="singletier">
+    <article
+      className={`singletier ${modifier}`}
+      data-scroll
+      data-scroll-speed="3"
+      data-scroll-class="fade-in-element"
+    >
       <h2 className="singletier__title">{title} Medlemsskab</h2>
       <p className="singletier__slogan">{slogan}</p>
       <ul className="singletier__benefits">{children}</ul>

@@ -11,8 +11,13 @@ function Signup({
   children,
 }) {
   return (
-    <section className="signup">
-      <div className="signup__content">
+    <section className="signup" data-scroll-section>
+      <div
+        className="signup__content"
+        data-scroll
+        data-scroll-speed="2"
+        data-scroll-class="fade-in-element"
+      >
         <div className="signup__welcome">
           <h2>{title}</h2>
           <p>{paragraph}</p>

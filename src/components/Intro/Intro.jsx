@@ -4,7 +4,12 @@ function Intro({ subHeading, heading, modifier, paragraph, children }) {
   const routeName = window.location.pathname;
   return (
     <section className="intro" data-scroll-section>
-      <div className={`intro__content ${modifier}`} data-scroll data-scroll-speed="2">
+      <div
+        className={`intro__content ${modifier}`}
+        data-scroll
+        data-scroll-speed="2"
+        data-scroll-class="fade-in-element"
+      >
         {routeName === '/contact' ? (
           <>
             <div className="intro__content--small">

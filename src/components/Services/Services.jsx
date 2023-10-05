@@ -7,7 +7,7 @@ function Services() {
       <div
         className="services__grid"
         data-scroll-repeat={true}
-        data-scroll-speed="4"
+        data-scroll-speed="5"
         data-scroll
         data-scroll-class="fade-in-element"
       >

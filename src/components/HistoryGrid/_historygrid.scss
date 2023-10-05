@@ -14,6 +14,8 @@
     display: grid; // Activate grid
     grid-template-columns: repeat(3, 1fr); // 3 columns, 1fr each in width
     max-width: 100rem;
+    opacity: 0; // Invisible at first. Changing opacity to 1 when component is in view
+    transition: opacity 2s; // Opacity transition duration
 
     @media #{$breakpoint-mobile-landscape} {
       grid-template-columns: repeat(2, 1fr); // 3 columns, 1fr each in width

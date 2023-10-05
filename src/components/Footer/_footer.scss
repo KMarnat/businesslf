@@ -104,19 +104,10 @@
   &__buttons {
     display: flex; // Active flexbox
     margin-top: 1.5rem; // Spacing outside the element, top
+    gap: 1rem; // Gap between buttons
 
     @media #{$breakpoint-mobile-landscape} {
       flex-direction: column; // Stacking the 2 buttons on top of each other
-    }
-
-    // Selecting first button of the container
-    .btn:nth-of-type(1) {
-      margin-right: 2rem; // Adding space on the right to give a gap between the buttons
-
-      @media #{$breakpoint-mobile-landscape} {
-        margin-right: 0; // Removing spacing outside the element, right
-        margin-bottom: 1rem; // Adding spacing outside the element, bottom
-      }
     }
   }
 

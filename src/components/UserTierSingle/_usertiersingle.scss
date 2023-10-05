@@ -6,6 +6,8 @@
   margin: 5rem 2rem; // Spacing outside the element, top-bottom, left-right
   border-top: 1px solid #707070; // Border styles for top
   border-bottom: 1px solid #707070; // Border styles for top
+  opacity: 1;
+  transition: opacity 2s;
 
   @media #{$breakpoint-tablet-portrait} {
     margin: 0.5rem 1rem 3rem; // Spacing outside the element, top-bottom, left-right

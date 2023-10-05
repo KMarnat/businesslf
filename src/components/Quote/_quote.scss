@@ -20,4 +20,9 @@
       font-size: 2rem; // Text size
     }
   }
+
+  &--effect {
+    opacity: 0;
+    transition: opacity 2s;
+  }
 }

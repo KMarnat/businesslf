@@ -11,6 +11,7 @@
 
   .tabs {
     display: none;
+
     @media #{$breakpoint-tablet-portrait} {
       display: block;
     }
@@ -20,6 +21,7 @@
       align-items: center;
       justify-content: center;
       margin-top: 2rem;
+      margin-bottom: -2rem;
     }
 
     &__btn {
@@ -41,6 +43,8 @@
   // Usertiers group when viewing on bigger screens
   &--desktop {
     display: flex;
+    opacity: 0;
+    transition: opacity 2s;
     @media #{$breakpoint-tablet-portrait} {
       display: none;
     }
