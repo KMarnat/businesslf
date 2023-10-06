@@ -1,7 +1,7 @@
 function Quote() {
   return (
     <section className="quote" data-scroll-section>
-      <div className="quote--effect" data-scroll data-scroll-class="fade-in-element">
+      <div className="quote__scroll" data-scroll data-scroll-class="fade-in-element">
         <h2 data-scroll-speed="3">
           Kom tæt på et stykke
           <br /> danmark I stærk udvikling

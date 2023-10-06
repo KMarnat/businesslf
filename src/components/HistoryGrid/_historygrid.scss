@@ -3,10 +3,10 @@
 .history {
   display: flex; // Activate flexbox
   justify-content: center; // Centering content on the main axis
-  margin: 7rem 0; // Spacing outside the element, top-bottom, left-right
+  margin: 3rem 0 5rem; // Spacing outside the element, top-bottom, left-right
 
   @media #{$breakpoint-tablet-landscape} {
-    margin: 4rem 0; // Spacing outside the element, top-bottom, left-right
+    margin: 3rem 0 5rem; // Spacing outside the element, top-bottom, left-right
   }
 
   // Grid containing images and text
@@ -25,6 +25,10 @@
   // Selecting each cell that has image in it
   &__image {
     margin: 0.5rem; // Spacing outside the element
+
+    &--margin {
+      margin-bottom: -3rem;
+    }
 
     // Selecting last image of the grid
     &:last-of-type {

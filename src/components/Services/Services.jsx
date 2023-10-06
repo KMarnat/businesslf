@@ -6,9 +6,9 @@ function Services() {
     <section className="services" data-scroll-section>
       <div
         className="services__grid"
+        data-scroll
         data-scroll-repeat={true}
         data-scroll-speed="5"
-        data-scroll
         data-scroll-class="fade-in-element"
       >
         <div className="adaptive services__image">

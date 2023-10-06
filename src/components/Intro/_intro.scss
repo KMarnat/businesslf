@@ -16,7 +16,12 @@
     background-color: var(--main-bg-color);
 
     @media #{$breakpoint-mobile-landscape} {
-      margin: -5rem 1rem 0; // Spacing outside the element. Negative margin on top pulls it top
+      padding: 0rem 1.5rem; // Spacing inside the element, top-bottom, left-right
+    }
+
+    @media #{$breakpoint-mobile-portrait} {
+      margin: -12rem 2rem 0; // Spacing outside the element. Negative margin on top pulls it top
+
       padding: 0rem 1.5rem; // Spacing inside the element, top-bottom, left-right
     }
 

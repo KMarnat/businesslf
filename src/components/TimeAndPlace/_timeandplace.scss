@@ -1,6 +1,6 @@
 /* TimeAndPlace component
 ---------------------------*/
-.aside {
+.event {
   border-top: 0.25rem solid var(--tertiary-bg-color); // Border on top of the element
   border-bottom: 0.25rem solid var(--tertiary-bg-color); // Border on top of the element
   padding-right: 5rem; // Spacing inside the element, right side
@@ -10,12 +10,12 @@
     margin: 2rem 0;
   }
 
-  // Paragraph element
+  // Paragraphs
   p {
     color: #5d9b7c;
   }
 
-  // Title headings
+  // Titles
   h5 {
     margin-bottom: 1rem; // Spacing outside the element, bottom
   }

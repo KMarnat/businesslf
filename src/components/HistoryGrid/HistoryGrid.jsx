@@ -10,12 +10,12 @@ function HistoryGrid() {
         data-scroll-class="fade-in-element"
         data-scroll-repeat={true}
       >
-        <div className="history__image adaptive ">
+        <div className="history__image adaptive">
           <div className="adaptive-photo">
             <img src={historyImg} alt="" />
           </div>
         </div>
-        <div className="history__image adaptive ">
+        <div className="history__image adaptive">
           <div className="adaptive-photo">
             <img
               src="https://images.unsplash.com/photo-1447069387593-a5de0862481e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
@@ -23,7 +23,7 @@ function HistoryGrid() {
             />
           </div>
         </div>
-        <div className="history__image adaptive ">
+        <div className="history__image adaptive">
           <div className="adaptive-photo">
             <img
               src="https://images.unsplash.com/photo-1515325595179-59cd5262ca53?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80"
@@ -31,7 +31,7 @@ function HistoryGrid() {
             />
           </div>
         </div>
-        <div className="history__image adaptive ">
+        <div className="history__image adaptive">
           <div className="adaptive-photo">
             <img
               src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
@@ -48,7 +48,7 @@ function HistoryGrid() {
             esedit eos deles debistem voluptint asperumqui que consero quam volora quat.
           </p>
         </div>
-        <div className="history__image adaptive ">
+        <div className="history__image adaptive">
           <div className="adaptive-photo">
             <img
               src="https://images.unsplash.com/photo-1491841651911-c44c30c34548?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"

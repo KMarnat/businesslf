@@ -13,9 +13,9 @@ function UserTiers() {
 
   return (
     <section className="usertiers" data-scroll-section>
-      <div className="tabs">
+      <div className="usertiers__mobile">
         <div
-          className="tabs__buttons"
+          className="tabs"
           data-scroll
           data-scroll-speed="1.5"
           data-scroll-class="fade-in-element"
@@ -49,7 +49,7 @@ function UserTiers() {
         )}
       </div>
       <div
-        className="usertiers--desktop"
+        className="usertiers__desktop"
         data-scroll
         data-scroll-speed="2"
         data-scroll-class="fade-in-element"
