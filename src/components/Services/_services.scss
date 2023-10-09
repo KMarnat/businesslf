@@ -3,13 +3,13 @@
 .services {
   display: flex; // Activate flexbox
   justify-content: center; // Align center on the main axis
-  margin: 3rem 0 3rem; // Spacing outside the element, top, left-right, bottom
+  margin: 3rem 0.5rem 3rem; // Spacing outside the element, top, left-right, bottom
 
   @media #{$breakpoint-tablet-landscape} {
     margin: 1rem 2rem 1rem; // Spacing outside the element, top, left-right, bottom
   }
   @media #{$breakpoint-mobile-landscape} {
-    margin: 0rem 2rem 0rem; // Spacing outside the element, top, left-right, bottom
+    margin: 0rem 1rem 0rem; // Spacing outside the element, top, left-right, bottom
   }
 
   // Grid container

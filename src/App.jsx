@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
 import arrow from './assets/arrow.svg';
 
@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   const scrollRef = useRef(0);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const scroll = new LocomotiveScroll({
@@ -30,6 +31,14 @@ function App() {
     const scrollContainer = document.querySelector('[data-scroll-container]');
     resizeObserver.observe(scrollContainer);
 
+    scroll.on('scroll', (obj) => {
+      if (obj.scroll.y > 400) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    });
+
     return () => {
       scroll.destroy();
     };
@@ -40,7 +49,13 @@ function App() {
       <Header />
       <Outlet />
 
-      <a href="#top" className="scrollbutton" role="button" aria-label="Back to top" data-scroll-to>
+      <a
+        href="#top"
+        className={`scrollbutton ${isVisible ? 'scrollbutton--visible' : ''}`}
+        role="button"
+        aria-label="Back to top"
+        data-scroll-to
+      >
         <img src={arrow} className="scrollbutton__icon" alt="arrow icon" />
       </a>
 

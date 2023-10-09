@@ -29,6 +29,7 @@
 
 // Styles for scrollbutton
 .scrollbutton {
+  display: none; // Button invisible at the start
   position: fixed; // Fixed in a position on screen
   bottom: 2rem; // 2rem from the bottom of the screen
   right: 2rem; // 2rem from the right of the screen
@@ -57,6 +58,12 @@
   &:hover .scrollbutton__icon {
     filter: brightness(0) saturate(100%) invert(19%) sepia(53%) saturate(605%) hue-rotate(107deg)
       brightness(94%) contrast(93%); // Used HEX to filter converter to change the color of the icon
+  }
+
+  // Modifier class for the button. When state is true (scroll > 400) then the button becomes visible.\
+  // Conditionally rendering the button did not work
+  &--visible {
+    display: block; // Button comes visible
   }
 }
 
