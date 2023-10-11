@@ -12,17 +12,22 @@
     margin: 2rem 0 4rem; // Spacing outside the element, top-bottom, left-right
   }
 
-  // Title of the quote
-  h2 {
-    font-style: italic; // Text style
-
-    @media #{$breakpoint-tablet-landscape} {
-      font-size: 2rem; // Text size
-    }
-  }
-
   &__scroll {
     opacity: 0;
     transition: opacity 2s;
+
+    // Title of the quote
+    h2 {
+      font-style: italic; // Text style
+      max-width: 40rem;
+
+      @media #{$breakpoint-tablet-landscape} {
+        font-size: 2rem; // Text size
+      }
+    }
+
+    p {
+      max-width: 40rem;
+    }
   }
 }

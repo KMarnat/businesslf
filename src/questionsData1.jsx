@@ -1,5 +1,4 @@
 const questionsData1 = {
-  title: 'Værd at vide',
   rows: [
     {
       title: 'Lorem ipsum dolor sit amet,',

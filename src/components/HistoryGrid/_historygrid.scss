@@ -3,7 +3,7 @@
 .history {
   display: flex; // Activate flexbox
   justify-content: center; // Centering content on the main axis
-  margin: 3rem 0 5rem; // Spacing outside the element, top-bottom, left-right
+  margin: 1rem 0 2rem; // Spacing outside the element, top-bottom, left-right
 
   @media #{$breakpoint-tablet-landscape} {
     margin: 3rem 0 5rem; // Spacing outside the element, top-bottom, left-right
@@ -45,6 +45,10 @@
     align-items: center; // Aligning center on the cross axis
     justify-content: center; // Aligning center on the main axis
     text-align: center; // Centering text.
+
+    h3 {
+      max-width: 20rem;
+    }
 
     @media #{$breakpoint-mobile-landscape} {
       grid-column: span 2; // Spans across 2 columns

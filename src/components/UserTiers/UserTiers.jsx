@@ -13,13 +13,13 @@ function UserTiers() {
 
   return (
     <section className="usertiers" data-scroll-section>
-      <div className="usertiers__mobile">
-        <div
-          className="tabs"
-          data-scroll
-          data-scroll-speed="1.5"
-          data-scroll-class="fade-in-element"
-        >
+      <div
+        className="usertiers__mobile"
+        data-scroll
+        data-scroll-speed="2"
+        data-scroll-class="fade-in-element"
+      >
+        <div className="tabs">
           {tierTitles.map((type, i) => (
             <button
               className={`tabs__btn ${isActive === type && 'active'}`}

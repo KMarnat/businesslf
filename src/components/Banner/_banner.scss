@@ -2,10 +2,14 @@
 --------------------*/
 .banner {
   .adaptive-photo {
-    height: 57rem;
+    height: 55rem;
 
     @media #{$breakpoint-mobile-portrait} {
-      height: 50rem;
+      height: 90vh;
     }
+
+    // @media #{$breakpoint-mobile-portrait} {
+    //   height: 50rem;
+    // }
   }
 }

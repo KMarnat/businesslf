@@ -17,25 +17,27 @@ function Footer() {
         </div>
         <div className="footer__cell">
           <p>
-            <strong>Udviklingsmiljø Nykøbing F.</strong>
-            <br />
-            Slotsbryggen 14 A-D DK-4800 Nykøbing F.
+            <span>
+              <strong>Udviklingsmiljø Nykøbing F.</strong>
+              Slotsbryggen 14 A-D DK-4800 Nykøbing F.
+            </span>
           </p>
           <p>
-            <strong>Udviklingsmiljø Nakskov.</strong>
-            <br />
-            Axeltorv 2, st., DK-4900 Nakskov
+            <span>
+              <strong>Udviklingsmiljø Nakskov.</strong>
+              Axeltorv 2, st., DK-4900 Nakskov
+            </span>
           </p>
           <p>
-            <strong>Embassy of Lolland-Falster</strong>
-            <br />
-            Flæsketorvet 68, 1., DK-1711 København V.
+            <span>
+              <strong>Embassy of Lolland-Falster</strong>
+              Flæsketorvet 68, 1., DK-1711 København V.
+            </span>
           </p>
         </div>
         <div className="footer__cell">
           <h4>
-            BUSINESS
-            <br /> LOLLAND-FALSTER
+            <span>BUSINESS</span> LOLLAND-FALSTER
           </h4>
           <div className="footer__contact">
             <p>Kidnakken 7, DK-4930 Maribo</p>
@@ -44,7 +46,7 @@ function Footer() {
             <p>info@businesslf.dk</p>
           </div>
           <h3>
-            Business <br /> Lolland-Falser
+            <span>Business</span> Lolland-Falser
           </h3>
         </div>
       </div>

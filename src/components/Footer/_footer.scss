@@ -32,6 +32,12 @@
       text-align: center;
     }
 
+    // Footer 2nd cell spans
+    span {
+      display: flex; // Activate flexbox
+      flex-direction: column; // Aligning items under each other
+    }
+
     // Selecting first grid cell
     &:nth-of-type(1) {
       @media #{$breakpoint-tablet-landscape} {

@@ -3,34 +3,35 @@
 .usertiers {
   display: flex; // Activate flexbox
   justify-content: center; // Centering items on the main axis
+  padding-top: 1rem; // Spacing inside the element, top
 
   @media #{$breakpoint-tablet-portrait} {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; // Stacking items on top of each other
+    align-items: center; // Aligning items center on the main axis
   }
 
   &__mobile {
-    display: none;
+    display: none; // Hiding the elemeent
 
     @media #{$breakpoint-tablet-portrait} {
-      display: block;
+      display: block; // Element becomes visible
     }
   }
 
   .tabs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: -2rem;
+    display: flex; // Activate flexbox
+    align-items: center; // Aligning items center on the main axis
+    justify-content: center; // Aligning items center on the cross axis
+    margin-top: 2rem; // Spacing outside the element, top
+    margin-bottom: -2rem; // Spacing outside the element, bottom
 
     &__btn {
       background-color: transparent;
-      border: 2px solid #0f4431;
+      border: 2px solid #0f4431; // 2px border around the element
       color: var(--main-text-color);
       width: 6rem;
       border-radius: 2rem; // Round corners
-      margin: 0.5rem;
+      margin: 0.5rem; // Spacing outside the element
       transition: 0.3s ease-in-out; // Animation settings
     }
   }
@@ -43,11 +44,11 @@
 
   // Usertiers group when viewing on bigger screens
   &__desktop {
-    display: flex;
-    opacity: 0;
-    transition: opacity 2s;
+    display: flex; // Activate flexbox
+    opacity: 0; // Element invisible
+    transition: opacity 2s; // Opacity transition settings
     @media #{$breakpoint-tablet-portrait} {
-      display: none;
+      display: none; // Element invisible
     }
   }
 }

@@ -12,6 +12,9 @@ function Questions() {
 
   return (
     <section className="questions" data-scroll-section data-scroll-class="fade-in-element">
+      <h2 className="questions__title" data-scroll data-scroll-speed="2">
+        Værd at vide
+      </h2>
       <div className="questions__group" data-scroll data-scroll-speed="2">
         <div className="questions__one">
           <Faq data={questionsData1} config={config} />

@@ -41,7 +41,7 @@ function HistoryGrid() {
         </div>
         <div className="history__description">
           <h3>
-            TEMAHISTORIE <br /> OVERSKRIFT
+            <span>TEMAHISTORIE</span> OVERSKRIFT
           </h3>
           <p>
             Erum rest, aut dolore nem haria voloritatat. Ibus voloria sum que pelic tecerio. Et

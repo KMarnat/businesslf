@@ -2,14 +2,18 @@
 -----------------*/
 .questions {
   opacity: 0;
-  transition: opacity 2s;
+  transition: opacity 2s; // Opactiy transition settings
+  display: flex; // Activate flexbox
+  flex-direction: column; // Aligning items under each other
+  align-items: center; // Aligning items center on the main axis
+  margin-top: 2rem; // Spacing outside the element, top
 
   // Questions group
   &__group {
     display: flex; // Activate flexbox
     justify-content: center; // Centering on the main axis
     column-gap: 3rem; // Gap between the columns
-    margin: 2rem 1rem; // Spacing outside the element, top-bottom, left-right
+    margin: 0rem 1rem; // Spacing outside the element, top-bottom, left-right
 
     @media #{$breakpoint-tablet-portrait} {
       flex-direction: column; // Stacking questions containers on top of each other
@@ -17,18 +21,19 @@
     }
   }
 
+  &__title {
+    margin-bottom: 0; // Spacing outside the element, bottom
+  }
+
   &__one,
   &__two {
     max-width: 30rem;
+    border-top: 1px solid #ccc; // Adding missing border top, because that side doesn't have title with the border under it
   }
 
   // 2nd questions group (on desktop view -> the right one)
   &__two {
-    margin-top: 6.625rem; // Adding spacing above the element to line it up with the first one
-    border-top: 1px solid #ccc; // Adding missing border top, because that side doesn't have title with the border under it
-
     @media #{$breakpoint-tablet-portrait} {
-      margin-top: 0; // Removing spacing above the element
       border-top: none; // Removing border from top
     }
   }
